@@ -40,11 +40,4 @@ I am focused on advancing my career in **Cloud Security & Engineering**. My curr
 - Gaining **hands-on experience in Security Automation & DevSecOps**
 - Expanding expertise in **Threat Hunting & Incident Response**
 
-## 📬 Let's Connect!
-Feel free to reach out for collaborations, discussions, or opportunities:
-- **LinkedIn**: [Your LinkedIn Profile](#)
-- **GitHub**: [Your GitHub Profile](#)
-- **Email**: [Your Email](#)
-
 🚀 **Passionate about securing the cloud and stopping cyber threats—one log at a time!**
-
