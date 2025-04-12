@@ -4,180 +4,625 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amir Fadelelsaid | Cybersecurity Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/responsive-enhancements.css">
+    <link rel="stylesheet" href="css/animations.css">
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #1a1a2e;
-            color: #fff;
-            text-align: center;
-            overflow-x: hidden;
-        }
-        header {
-            background: rgba(15, 52, 96, 0.9);
-            padding: 30px;
-            font-size: 1.5em;
-            position: relative;
-            z-index: 2;
-        }
-        .container {
-            width: 80%;
-            margin: 40px auto;
-            background: rgba(22, 33, 62, 0.9);
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 15px rgba(0, 150, 255, 0.3);
-            position: relative;
-            z-index: 2;
-        }
-        h1, h2, h3 {
-            color: #00a8ff;
-        }
-        #particles-js {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            z-index: 0;
-            background: url('https://source.unsplash.com/1600x900/?technology,cybersecurity') no-repeat center center/cover;
-        }
-        .interactive-btn {
-            background: #00a8ff;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 15px;
-            transition: transform 0.2s;
-        }
-        .interactive-btn:hover {
-            transform: scale(1.1);
-        }
-        .projects {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .project-card {
-            background: #0f3460;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 15px;
-            width: 300px;
-            box-shadow: 0px 5px 15px rgba(0, 150, 255, 0.3);
-            transition: transform 0.3s ease-in-out;
-        }
-        .project-card:hover {
-            transform: scale(1.05);
-        }
-        a {
-            color: #00a8ff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .footer {
-            padding: 20px;
-            background: #0f3460;
-            margin-top: 20px;
-        }
-    </style>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
     <div id="particles-js"></div>
-    <header>
-        <h1>Amir Fadelelsaid</h1>
-        <h3>Cybersecurity Analyst | SOC Specialist | Cloud Security</h3>
-    </header>
+    <div class="overlay"></div>
     
-    <div class="container">
-        <h2>About Me</h2>
-        <p>I'm a Cybersecurity Analyst with expertise in SIEM solutions (Splunk, Microsoft Sentinel), cloud security (AWS, Azure), and incident response. Passionate about proactive threat detection, security automation, and SOC operations, I specialize in log analysis, threat hunting, and vulnerability management to strengthen enterprise security.With hands-on experience in malware analysis, IAM security, and compliance frameworks (NIST CSF, ISO 27001), I excel at detecting, analyzing, and mitigating cyber threats in hybrid cloud environments. My mission is to enhance security operations through efficient detection engineering, security automation, and continuous monitoring.</p>
-    </div>
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-text">A<span class="highlight">F</span></span>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#certifications" class="nav-link">Certifications</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </div>
+    </nav>
 
-    <div class="container">
-        <h2>Resume</h2>
-        <p>Download my full resume here:</p>
-        <a href="https://drive.google.com/file/d/1sLpObJ6TSTe7zUSHkzClRU0bK4WuoqjB/view?usp=sharing" target="_blank">📄 Download Resume</a> 
-    </div>
-
-    <div class="container">
-        <h2>Skills</h2>
-        <p>✅ SIEM (Splunk, Microsoft Sentinel) | ✅ Cloud Security (AWS, Azure) | ✅ Incident Response & Threat Hunting | ✅ Security Operations Center (SOC) Monitoring | ✅ Threat Intelligence & Detection Engineering | ✅ Security Automation & Orchestration (SOAR) | ✅ Log Analysis & Correlation (Splunk, Sentinel) | ✅ Vulnerability Management & Risk Assessment | ✅ Identity & Access Management (IAM) | ✅ Network Security & Firewall Management | ✅ Compliance & Governance (NIST, ISO 27001, CIS) | ✅ Cloud Security Posture Management (CSPM) | ✅ Active Directory Security & Hardening</p>
-    </div>
-
-    <div class="container">
-        <h2>Education</h2>
-        <h3>Master's in Cybersecurity & IT Management</h3>
-        <p><em>Nov 2024 – Nov 2025</em></p>
-        <h3>Bachelor’s in Criminal Justice</h3>
-        <p><em>Dec 2022 – Jun 2023</em></p>
-    </div>
-
-    <div class="container">
-        <h2>Certifications</h2>
-        <p>✅ Microsoft SC-200 (Security Operations Analyst) </p>
-        <p>✅ CompTIA CySA+ </p>
-        <p>✅ CompTIA Security+ </p>
-        <p>✅ CompTIA Network+ </p>
-        <p>✅ AWS Cloud Essentials </p>
-        <p>✅ Microsoft Sentinel Security Operations </p>
-        <p>✅ Cisco Security Operations (SOC) </p>
-        <p>✅ Google Cybersecurity Certificate </p>
-        <p>✅ NIST Cybersecurity Framework (CSF) Certification </p>
-        <p>✅ Splunk Administration & SIEM Analysis</p>
-    </div>
-
-    <div class="container">
-        <h2>Experience</h2>
-        <h3>Cybersecurity Analyst Intern (Mosse Cyber Security Institute)</h3>
-        <p><em>Sep 2024 - Feb 2025 (Remote)</em></p>
-        <p>✅ Monitored SIEM alerts, conducted log analysis, and performed vulnerability assessments.</p>
-    </div>
-
-   <div class="container">
-        <h2>Projects</h2>
-        <div class="projects">
-            <div class="project-card">
-                <h3>Microsoft Azure Home Lab</h3>
-                <p>A cloud-based cybersecurity lab in Azure using Microsoft Sentinel for real-world attack simulations.</p>
-                <a href="https://github.com/Amir6878/Microsoft-Azure-Home-Lab" target="_blank">View Project</a>
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="glitch" data-text="Amir Fadelelsaid">Amir Fadelelsaid</h1>
+                <div class="typing-container">
+                    <span id="typed-text"></span>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary-btn">View Projects</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
             </div>
-            <div class="project-card">
-                <h3>SOC Automation Project</h3>
-                <p>Implemented automated threat detection workflows using SIEM tools.</p>
-                <a href="https://github.com/Amir6878/SOC-Automation-Project-" target="_blank">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>Elastic Defense Lab</h3>
-                <p>Cyber defense simulations and detection engineering with Elastic SIEM.</p>
-                <a href="https://github.com/Amir-Fadelelsaid/Elastic-Defense-Lab" target="_blank">View Project</a>
+            <div class="hero-image">
+                <div class="hexagon">
+                    <div class="hexagon-content">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div>
+                <span class="scroll-text">Scroll Down</span>
+            </div>
+        </div>
+    </header>
+    
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"><span class="highlight">&lt;</span> About Me <span class="highlight">/&gt;</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a <span class="highlight">Cybersecurity Analyst</span> with expertise in SIEM solutions (Splunk, Microsoft Sentinel) , cloud security (AWS, Azure), and incident response. Passionate about proactive threat detection, security automation, and SOC operations, I specialize in log analysis, threat hunting, and vulnerability management to strengthen enterprise security.</p>
+                    <p>With hands-on experience in malware analysis, IAM security, and compliance frameworks (NIST CSF, ISO 27001), I excel at detecting, analyzing, and mitigating cyber threats in hybrid cloud environments. My mission is to enhance security operations through efficient detection engineering, security automation, and continuous monitoring.</p>
+                    <div class="resume-download">
+                        <a href="https://drive.google.com/file/d/1sLpObJ6TSTe7zUSHkzClRU0bK4WuoqjB/view?usp=sharing" target="_blank" class="btn resume-btn">
+                            <i class="fas fa-file-download"></i> Download Resume
+                        </a>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-shield-virus"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Threat Detection</h3>
+                            <p>Advanced SIEM & SOAR</p>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-cloud-shield"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Cloud Security</h3>
+                            <p>AWS & Azure</p>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Network Defense</h3>
+                            <p>Firewall & IDS/IPS</p>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-lock-keyhole"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>IAM Security</h3>
+                            <p>Identity & Access</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"><span class="highlight">&lt;</span> Skills <span class="highlight">/&gt;</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3 class="category-title">SIEM & Monitoring</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                            <div class="skill-info">
+                                <h4>Splunk</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="90"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-eye"></i></div>
+                            <div class="skill-info">
+                                <h4>Microsoft Sentinel</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-search"></i></div>
+                            <div class="skill-info">
+                                <h4>Log Analysis</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="88"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">Cloud Security</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-aws"></i></div>
+                            <div class="skill-info">
+                                <h4>AWS Security</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-microsoft"></i></div>
+                            <div class="skill-info">
+                                <h4>Azure Security</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-cloud-shield"></i></div>
+                            <div class="skill-info">
+                                <h4>CSPM</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">Security Operations</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-virus-slash"></i></div>
+                            <div class="skill-info">
+                                <h4>Threat Hunting</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="82"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-shield-alt"></i></div>
+                            <div class="skill-info">
+                                <h4>Incident Response</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="88"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-robot"></i></div>
+                            <div class="skill-info">
+                                <h4>Security Automation</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="78"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">Compliance & Governance</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-check-circle"></i></div>
+                            <div class="skill-info">
+                                <h4>NIST CSF</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-file-contract"></i></div>
+                            <div class="skill-info">
+                                <h4>ISO 27001</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-tasks"></i></div>
+                            <div class="skill-info">
+                                <h4>CIS Controls</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"><span class="highlight">&lt;</span> Education <span class="highlight">/&gt;</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Nov 2024 – Nov 2025</div>
+                        <h3 class="timeline-title">Master's in Cybersecurity & IT Management</h3>
+                        <p class="timeline-description">Focusing on advanced security operations, cloud security architecture, and security leadership.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Dec 2022 – Jun 2023</div>
+                        <h3 class="timeline-title">Bachelor's in Criminal Justice</h3>
+                        <p class="timeline-description">Developed a strong foundation in investigative techniques, digital forensics, and legal frameworks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"><span class="highlight">&lt;</span> Certifications <span class="highlight">/&gt;</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Microsoft SC-200</h3>
+                        <p>Security Operations Analyst</p>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h3>CompTIA CySA+</h3>
+                        <p>Cybersecurity Analyst</p>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h3>CompTIA Security+</h3>
+                        <p>Security Fundamentals</p>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h3>CompTIA Network+</h3>
+                        <p>Network Fundamentals</p>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h3>AWS Cloud Essentials</h3>
+                        <p>Cloud Fundamentals</p>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Microsoft Sentinel</h3>
+                        <p>Security Operations</p>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-cisco"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Cisco SOC</h3>
+                        <p>Security Operations Center</p>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Google Cybersecurity</h3>
+                        <p>Professional Certificate</p>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h3>NIST CSF</h3>
+                        <p>Cybersecurity Framework</p>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Splunk</h3>
+                        <p>Administration & SIEM Analysis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"><span class="highlight">&lt;</span> Experience <span class="highlight">/&gt;</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div class="experience-title">
+                        <h3>Cybersecurity Analyst Intern</h3>
+                        <p class="company">Mosse Cyber Security Institute</p>
+                    </div>
+                    <div class="experience-meta">
+                        <div class="experience-date">
+                            <i class="fas fa-calendar-alt"></i> Sep 2024 - Feb 2025
+                        </div>
+                        <div class="experience-location">
+                            <i class="fas fa-map-marker-alt"></i> Remote
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-body">
+                    <ul class="experience-responsibilities">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Monitored SIEM alerts and conducted in-depth log analysis to identify potential security incidents</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Performed vulnerability assessments and contributed to remediation planning</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Assisted in developing detection rules and implementing security controls</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Participated in incident response exercises and threat hunting activities</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"><span class="highlight">&lt;</span> Projects <span class="highlight">/&gt;</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://source.unsplash.com/random/600x400/?azure,security" alt="Azure Home Lab">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Amir6878/Microsoft-Azure-Home-Lab" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Microsoft Azure Home Lab</h3>
+                        <p class="project-description">A cloud-based cybersecurity lab in Azure using Microsoft Sentinel for real-world attack simulations and detection engineering.</p>
+                        <div class="project-tags">
+                            <span class="tag">Azure</span>
+                            <span class="tag">Sentinel</span>
+                            <span class="tag">SIEM</span>
+                            <span class="tag">Cloud Security</span>
+                        </div>
+                        <a href="https://github.com/Amir6878/Microsoft-Azure-Home-Lab" target="_blank" class="btn project-btn">View Project</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://source.unsplash.com/random/600x400/?automation,security" alt="SOC Automation">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Amir6878/SOC-Automation-Project-" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">SOC Automation Project</h3>
+                        <p class="project-description">Implemented automated threat detection workflows using SIEM tools and SOAR platforms to enhance security operations efficiency.</p>
+                        <div class="project-tags">
+                            <span class="tag">SOAR</span>
+                            <span class="tag">Automation</span>
+                            <span class="tag">Playbooks</span>
+                            <span class="tag">SOC</span>
+                        </div>
+                        <a href="https://github.com/Amir6878/SOC-Automation-Project-" target="_blank" class="btn project-btn">View Project</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://source.unsplash.com/random/600x400/?elastic,cybersecurity" alt="Elastic Defense Lab">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Amir-Fadelelsaid/Elastic-Defense-Lab" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Elastic Defense Lab</h3>
+                        <p class="project-description">Cyber defense simulations and detection engineering with Elastic SIEM, focusing on advanced threat detection and response.</p>
+                        <div class="project-tags">
+                            <span class="tag">Elastic</span>
+                            <span class="tag">SIEM</span>
+                            <span class="tag">Detection</span>
+                            <span class="tag">Threat Hunting</span>
+                        </div>
+                        <a href="https://github.com/Amir-Fadelelsaid/Elastic-Defense-Lab" target="_blank" class="btn project-btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"><span class="highlight">&lt;</span> Contact <span class="highlight">/&gt;</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <a href="mailto:Amir.Fadelelsaid@gmail.com">Amir.Fadelelsaid@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/amir-fadelelsaid-477453224" target="_blank">linkedin.com/in/amir-fadelelsaid-477453224</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/Amir-Fadelelsaid" target="_blank">github.com/Amir-Fadelelsaid</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">A<span class="highlight">F</span></span>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/amir-fadelelsaid-477453224" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Amir-Fadelelsaid" target="_blank" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:Amir.Fadelelsaid@gmail.com" class="social-icon">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Amir Fadelelsaid | Cybersecurity Portfolio</p>
+                <div class="footer-nav">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
     </div>
 
-    <div class="container">
-        <h2>Contact</h2>
-        <p>📧 Email: <a href="mailto:Amir.Fadelelsaid@gmail.com">Amir.Fadelelsaid@gmail.com</a></p>
-        <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/amir-fadelelsaid-477453224" target="_blank">linkedin.com/in/amir-fadelelsaid-477453224</a></p>
-        <p>📂 GitHub: <a href="https://github.com/Amir-Fadelelsaid" target="_blank">github.com/Amir-Fadelelsaid</a></p>
-    </div>
-
-    <div class="footer">
-        <p>© 2025 Amir Fadelelsaid | Cybersecurity Portfolio</p>
-    </div>
-
-    <script>
-        particlesJS("particles-js", {
-            particles: { number: { value: 80, density: { enable: true, value_area: 800 } }, color: { value: "#00a8ff" } }
-        });
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
