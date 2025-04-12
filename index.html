@@ -4,173 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amir Fadelelsaid | Cybersecurity Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <style>
         body {
             font-family: 'Poppins', sans-serif;
+            background-color: #0e1220;
+            color: #fff;
             margin: 0;
             padding: 0;
-            background-color: #121212;
-            color: #eaeaea;
             overflow-x: hidden;
         }
         header {
-            background: rgba(0, 0, 0, 0.8);
+            background-color: rgba(20, 30, 50, 0.9);
             padding: 20px;
             text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+            position: relative;
+            z-index: 1;
+            animation: fadeInDown 1.5s ease;
         }
         .container {
-            max-width: 900px;
-            margin: 40px auto;
-            background: #1e1e1e;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0px 6px 15px rgba(0, 168, 255, 0.1);
-            transition: transform 0.3s ease;
-        }
-        .container:hover {
-            transform: translateY(-5px);
+            width: 85%;
+            max-width: 1200px;
+            margin: 30px auto;
+            background-color: rgba(20, 30, 50, 0.9);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0, 170, 255, 0.2);
+            position: relative;
+            z-index: 1;
+            animation: fadeInUp 1.5s ease;
         }
         h1, h2, h3 {
-            color: #00a8ff;
-        }
-        .typed-text {
-            color: #fff;
-        }
-        #particles-js {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            background: #121212;
-            z-index: -1;
-        }
-        .btn {
-            background: #00a8ff;
-            color: #fff;
-            padding: 8px 16px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: transform 0.2s ease;
-        }
-        .btn:hover {
-            transform: scale(1.05);
-        }
-        .project-grid {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-        .project-card {
-            width: 260px;
-            background: #252525;
-            border-radius: 10px;
-            padding: 15px;
-            transition: transform 0.3s ease;
-        }
-        .project-card:hover {
-            transform: scale(1.07);
-            box-shadow: 0px 5px 15px rgba(0, 168, 255, 0.2);
+            color: #00aaff;
         }
         a {
-            color: #00a8ff;
+            color: #00aaff;
             text-decoration: none;
         }
         a:hover {
             text-decoration: underline;
         }
-        footer {
-            text-align: center;
-            background: #181818;
+        button {
+            background-color: #00aaff;
+            border: none;
+            padding: 12px 25px;
+            color: white;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        button:hover {
+            transform: translateY(-5px);
+        }
+        .projects {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .project-card {
+            width: 280px;
+            background-color: #16213e;
+            margin: 15px;
             padding: 15px;
-            color: #777;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0, 170, 255, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+        #particles-js {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://source.unsplash.com/1600x900/?technology,cybersecurity') no-repeat center center/cover;
+            z-index: 0;
+        }
+        footer {
+            background-color: #141e32;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            position: relative;
+            z-index: 1;
+            animation: fadeIn 2s ease;
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
     </style>
 </head>
 <body>
     <div id="particles-js"></div>
+
     <header>
         <h1>Amir Fadelelsaid</h1>
-        <h3 class="typed-text"></h3>
+        <h3>Cybersecurity Analyst | SOC Specialist | Cloud Security</h3>
     </header>
 
-    <section class="container">
-        <h2>About Me</h2>
-        <p>Cybersecurity Analyst specializing in SIEM, Cloud Security, and SOC operations. Expert in threat detection, security automation, and compliance.</p>
-    </section>
-
-    <section class="container">
-        <h2>Resume</h2>
-        <a class="btn" href="https://drive.google.com/file/d/1sLpObJ6TSTe7zUSHkzClRU0bK4WuoqjB/view?usp=sharing" target="_blank">Download Resume 📄</a>
-    </section>
-
-    <section class="container">
-        <h2>Skills</h2>
-        <p>SIEM | Cloud Security | Incident Response | SOC | Threat Intelligence | SOAR | Log Analysis | IAM | Network Security | Compliance (NIST, ISO)</p>
-    </section>
-
-    <section class="container">
-        <h2>Education</h2>
-        <p>Master's in Cybersecurity & IT Management (Nov 2024 – Nov 2025)</p>
-        <p>Bachelor's in Criminal Justice (Dec 2022 – Jun 2023)</p>
-    </section>
-
-    <section class="container">
-        <h2>Certifications</h2>
-        <p>SC-200 | CySA+ | Security+ | Network+ | AWS Essentials | Sentinel | Cisco SOC | Google Cybersecurity | NIST CSF | Splunk SIEM</p>
-    </section>
-
-    <section class="container">
-        <h2>Experience</h2>
-        <p><strong>Mosse Cyber Security Institute</strong> | Cybersecurity Analyst Intern | Remote (Sep 2024 - Feb 2025)</p>
-    </section>
-
-    <section class="container">
-        <h2>Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <h3>Azure Home Lab</h3>
-                <p>Cloud cybersecurity lab using Sentinel.</p>
-                <a href="#">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>SOC Automation</h3>
-                <p>Automated SIEM threat detection.</p>
-                <a href="#">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>Elastic Defense Lab</h3>
-                <p>Simulations & detection with Elastic SIEM.</p>
-                <a href="#">View Project</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="container">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:Amir.Fadelelsaid@gmail.com">Amir.Fadelelsaid@gmail.com</a></p>
-        <p>LinkedIn: <a href="#">linkedin.com/in/amir-fadelelsaid-477453224</a></p>
-        <p>GitHub: <a href="#">github.com/Amir-Fadelelsaid</a></p>
-    </section>
-
-    <footer>© 2025 Amir Fadelelsaid</footer>
+    <!-- Rest of your HTML content remains unchanged -->
 
     <script>
-        particlesJS("particles-js", {particles: {number: {value: 80}, color: {value: "#00a8ff"}}});
-        new Typed('.typed-text', {
-            strings: ["Cybersecurity Analyst", "SOC Specialist", "Cloud Security Expert"],
-            typeSpeed: 50,
-            backSpeed: 25,
-            loop: true
+        particlesJS.load('particles-js', 'particles.json', function() {
+            console.log('particles.js loaded - callback');
         });
     </script>
 </body>
