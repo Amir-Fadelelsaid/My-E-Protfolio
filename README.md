@@ -13,6 +13,9 @@ Welcome to my **ePortfolio**, where I showcase my expertise, projects, and certi
 - **Automation & Scripting** (PowerShell, Python)
 
 ## 🎓 Certifications
+- **Microsoft AZ-500: Azure Security Engineer** (Certified October 2025 – Expires October 2026)
+- **CompTIA Security+**
+- **CompTIA Network+**
 - **CompTIA CySA+** (Certified November 2024)
 - **Microsoft SC-200: Security Operations Analyst** (Certified February 2025)
 - **AWS Security Specialty** (In Progress)
