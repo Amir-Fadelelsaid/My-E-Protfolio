@@ -14,8 +14,8 @@ Welcome to my **ePortfolio**, where I showcase my expertise, projects, and certi
 
 ## 🎓 Certifications
 - **Microsoft AZ-500: Azure Security Engineer** (Certified October 2025 – Expires October 2026)
-- **CompTIA Security+**
-- **CompTIA Network+**
+- **CompTIA Security+** (Certified January 2025)
+- **CompTIA Network+** (Certified January 2025)
 - **CompTIA CySA+** (Certified November 2024)
 - **Microsoft SC-200: Security Operations Analyst** (Certified February 2025)
 - **AWS Security Specialty** (In Progress)
