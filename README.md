@@ -18,6 +18,7 @@ Welcome to my **ePortfolio**, where I showcase my expertise, projects, and certi
 - **CompTIA Network+** (Certified January 2025)
 - **CompTIA CySA+** (Certified November 2024)
 - **Microsoft SC-200: Security Operations Analyst** (Certified February 2025)
+- **AWS Certified Cloud Practitioner** (Certified Feburary 2026)
 - **AWS Security Specialty** (In Progress)
 - **Splunk Enterprise Certified Admin** (Upcoming Goal)
 
